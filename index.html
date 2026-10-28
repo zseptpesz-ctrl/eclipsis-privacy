@@ -1,47 +1,72 @@
 <html>
+<head>
+<meta charset="utf-8">
+<title>Privacy Policy — Eclipsis</title>
+</head>
 <body>
 <h1>Privacy Policy — Eclipsis</h1>
-<p>Last updated: 23/09/2026</p>
+<p>Last updated: 27/10/2026</p>
 
 <h2>1. Analytics</h2>
-<p>Eclipsis does not currently use any third-party analytics service. We do not track your individual usage of the app.</p>
+<p>Only if you choose Allow on the "Share anonymous usage data?" screen, or turn on "Share anonymous usage data" in Settings, Eclipsis sends usage events to PostHog, an analytics service, on its EU servers. If you choose No thanks, or turn the setting off, nothing is sent and the analytics service is not even started.</p>
+<p><strong>Events sent by the app:</strong> app opened; onboarding started, each onboarding step viewed and completed (identity, habits), onboarding completed (finished or skipped); first task created (during onboarding or later, once); task completed (with the category of the task, never its name); 7-day streak reached (once); paywall viewed (with the screen that opened it); purchase started and purchase completed (with the identifier of the plan).<br>
+<strong>Events added automatically by the PostHog library:</strong> app installed, updated, opened and sent to the background; screens viewed; rapid repeated taps (the tapped element and its position on the screen).</p>
+<p><strong>Each event includes:</strong> random user and session identifiers, device model and type, iOS version, app and analytics-library versions, app identifier, language, time zone, screen size, network type, and whether the app is a TestFlight, sideloaded or simulator build. PostHog also receives your IP address, from which it can estimate an approximate location.</p>
+<p><strong>What is not collected:</strong> your name, e-mail address or any account (Eclipsis has no account); the names or contents of your tasks, goals and statistics; your precise location; session recordings or screenshots; crash reports. Eclipsis does not use the advertising identifier and does not track you across other companies' apps or websites.</p>
+<p><strong>Withdrawing your consent:</strong> in Eclipsis, open Settings and turn off "Share anonymous usage data". This takes effect immediately: the analytics service is stopped and nothing more is sent. You can turn it on again at any time.<br>
+Purpose: understanding how Eclipsis is used in order to improve it.<br>
+Legal basis: your consent (Art. 6.1.a GDPR), which you can withdraw at any time.</p>
 
 <h2>2. Data Processed and Purposes</h2>
-<p>Eclipsis does not operate any server of its own. No data is transmitted to or stored on any infrastructure we control. Two categories of data exist:</p>
-<p><strong>a) Data stored only on your device</strong><br>
-Your habits, progress, statistics, and settings are stored locally on your device using SwiftData (Apple). This data never leaves your device and is never transmitted to us. We have no access to it.<br>
+<p>Eclipsis does not operate any server of its own: we do not host or have access to your habit and progress data. Three categories of data exist:</p>
+<p><strong>a) Data stored on your device and, if iCloud is available and enabled for Eclipsis in your device settings, in your iCloud account</strong><br>
+Your habits, progress, statistics, and settings are stored on your device using SwiftData (Apple). If iCloud is available and enabled for Eclipsis in your device settings, this data is also synchronized through your own private iCloud account (the private CloudKit database), which keeps it available on your other devices signed in with the same Apple Account (see section 3). This data is stored and processed by Apple under your iCloud account. The developer has no access to it. Apart from this synchronization, and the usage events described in c) if you allow them, this data does not leave your device.<br>
 Legal basis: performance of the service you requested (Art. 6.1.b GDPR).</p>
 <p><strong>b) Data processed by our providers to manage subscriptions</strong><br>
 When you make a purchase or subscribe, Apple (App Store / StoreKit) and RevenueCat process, for their own technical purposes, transaction-related data: anonymous purchase identifier, purchase history, subscription status. We do not have access to your payment card details, which are handled exclusively by Apple.<br>
 Legal basis: performance of the subscription contract (Art. 6.1.b GDPR).</p>
+<p><strong>c) Usage analytics (only if you allow it)</strong><br>
+If you choose Allow on the "Share anonymous usage data?" screen or turn it on in Settings, usage events with device and app information are sent to PostHog, which processes them on our behalf. What is sent is listed in section 1.<br>
+Legal basis: your consent (Art. 6.1.a GDPR).</p>
 
-<h2>3. Data Recipients</h2>
+<h2>3. iCloud Synchronization</h2>
+<p>Eclipsis can keep your data in sync across your devices through Apple's iCloud (CloudKit). There is no separate switch in Eclipsis: synchronization works when iCloud is available and enabled for Eclipsis in your device settings.</p>
+<p><strong>What is synchronized:</strong> your tasks and sections, completion history, goals, weekly scores, workout logs, XP and onboarding status. This data is stored in the private CloudKit database of your own iCloud account and synchronized between your devices signed in with the same Apple Account.<br>
+<strong>What stays on your device:</strong> your preferences, such as accent color, reminders and your analytics choice. They are not synchronized.</p>
+<p><strong>New devices:</strong> when you install Eclipsis on another device signed in with the same Apple Account, with iCloud enabled for Eclipsis, your synchronized data is retrieved from iCloud onto that device.<br>
+<strong>Changes and deletion:</strong> changes made on one device, including deletions and the import of a backup, are applied to your other devices. If iCloud is not available, Eclipsis keeps working with the data on your device. Data kept in iCloud may remain there after you delete the app; you can manage or delete it in your iCloud storage settings on your device.</p>
+<p><strong>What the developer can and cannot see:</strong> this data is stored and processed by Apple under your iCloud account. Eclipsis has no server of its own and the developer has no access to it.</p>
+
+<h2>4. Data Recipients</h2>
 <p>- Apple Inc. (payment processing)<br>
+- Apple Inc. (iCloud, when iCloud is available and enabled for Eclipsis in your device settings: storage and synchronization of your habit and progress data in your private iCloud account; we have no access to this data)<br>
 - RevenueCat, Inc. (subscription management)<br>
+- PostHog Inc. (usage analytics, EU servers, only if you allow it)<br>
 We do not sell or share your data for marketing or commercial purposes.</p>
 
-<h2>4. Transfers Outside the European Union</h2>
+<h2>5. Transfers Outside the European Union</h2>
 <p>RevenueCat and Apple are companies based in the United States. Purchase-related data may therefore be processed outside the European Union, under the safeguards provided by these providers (standard contractual clauses).</p>
+<p>PostHog Inc. is also based in the United States. Usage analytics (only if you allow them) are stored on PostHog's EU servers in Frankfurt, Germany. PostHog states that, for its EU Cloud, it has subprocessors outside the EU and that its staff may access data from outside the EU, including for support. For these transfers, PostHog Inc. is certified under the EU-U.S. Data Privacy Framework, and its Data Processing Agreement also provides for the EU Standard Contractual Clauses (see <a href="https://posthog.com/dpa">posthog.com/dpa</a>).</p>
 
-<h2>5. Data Retention</h2>
-<p>Locally stored data remains on your device until you delete the app or its data. Subscription-related data is retained by Apple and RevenueCat according to their own policies.</p>
+<h2>6. Data Retention</h2>
+<p>Data stored on your device remains there until you delete the app or its data. If iCloud is enabled, this data is also kept in your private iCloud account and may remain in iCloud after you delete the app. Subscription-related data is retained by Apple and RevenueCat according to their own policies. Usage analytics are kept by PostHog for up to one year.</p>
 
-<h2>6. Your Rights</h2>
+<h2>7. Your Rights</h2>
 <p>Under GDPR, you have the right to access, rectify, erase, restrict, object to, and port your data. You may contact us at zseptpesz@gmail.com.<br>
 You also have the right to lodge a complaint with the <a href="https://www.cnil.fr">CNIL</a> or your local data protection authority.</p>
 
-<h2>7. Data Controller</h2>
+<h2>8. Data Controller</h2>
 <p>Thomas RABINAUD, trading as Zsept (sole proprietorship)<br>
 60 rue François 1er 75008 Paris FRANCE<br>
 Contact: zseptpesz@gmail.com</p>
 
-<h2>8. Children's Privacy</h2>
+<h2>9. Children's Privacy</h2>
 <p>Eclipsis is not directed at children under 13, and we do not knowingly collect data from them.</p>
 
-<h2>9. Changes to This Policy</h2>
+<h2>10. Changes to This Policy</h2>
 <p>This policy may be updated periodically. Continued use of the app after changes constitutes acceptance.</p>
 
-<h2>10. Contact</h2>
+<h2>11. Contact</h2>
 <p>zseptpesz@gmail.com</p>
 </body>
 </html>
